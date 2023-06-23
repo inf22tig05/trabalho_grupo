@@ -20,28 +20,6 @@ body
     width: 250px;
 }
 
-.sidebar .logo_details .logo
-{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    color: var(--color-white1);
-    pointer-events: none;
-    opacity: 0;
-}
-
-.sidebar.active .logo_details .logo
-{
-    opacity: 1;
-}
-
-.logo_details .logo i
-{
-    font-size: 28px;
-    margin-right: 5px;
-}
 
 .sidebar #btn
 {
