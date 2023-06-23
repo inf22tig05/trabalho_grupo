@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <link rel="icon" type="image/x-icon" href="trunk/Imagem/icon.ico">
+    <title>Account Page</title>
+</head>
+<body>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">Entrar</button>
+            <button type="button" onclick="register()" class="toggle-btn">Registar</button>
+        </div>
+        <form id="login" class="input-group" action="home.html">
+            <input type="text" class="input-field" placeholder="Usuario" required>
+            <input type="password" class="input-field" placeholder="Palavra passe" required>
+            <input type="checkbox" class="check-box">
+            <span class="span">Lembrar Palavra Passe</span>
+            <button type="submit" class="submit-btn">Entrar</button> 
+        </form>
+        <form id="register" class="input-group" action="home.html">
+            <input type="text" class="input-field" placeholder="Primeiro nome" required>
+            <input type="text" class="input-field" placeholder="Ultimo nome" required>
+            <input type="email" class="input-field" placeholder="e-mail" required>
+            <input type="password" class="input-field" placeholder="Palavra paasse" required>
+            <input type="password" class="input-field" placeholder="Confirmar Palavra paasse" required>
+            <input type="checkbox" class="check-box">
+            <span class="span">Aceite os tesmos e codições</span>
+            <button type="submit" class="submit-btn">Registar</button> 
+        </form>
+        <div class="social-icons">
+            <img src="../../Imagem/facebook.png" alt="Icon_Facebook">
+            <img src="../../Imagem/google.png" alt="">
+            <img src="../../Imagem/twitter.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        const res = document.getElementsByClassName("submit-btn")
+        
+        function login(){
+            x.style.left = "35px"
+            y.style.left = "500px"
+            z.style.left = "0"
+        }
+
+        function register(){
+            x.style.left = "-450px"
+            y.style.left = "35px"
+            z.style.left = "125px"
+        }
+    </script>
+</body>
+</html>

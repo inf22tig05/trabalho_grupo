@@ -1,0 +1,22 @@
+/*Configuração geral da pagina*/
+:root
+{
+    --color-default: #002333;
+    --color-secund: #082d3f;
+    --color-white1: #DEEFE7;
+    --color-white2: #FFFFFF;
+    --color-gray: #B4BEC9;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
