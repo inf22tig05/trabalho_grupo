@@ -1,5 +1,3 @@
-
-
 .sidebar
 {
     height: 100%;
@@ -16,6 +14,7 @@
 {
     width: 250px;
 }
+
 
 .sidebar #btn
 {
@@ -218,11 +217,12 @@
     position: absolute;
     height: 100%;
     width: calc(100% -78px);
-    left: 78px;
+    left: 20%;
+    right: 20%;
     transition: all 0.5s ease;
 }
 
-.home_content .description
+.home_content .help
 {
     font-size: 25px;
     font-weight: 500;
@@ -233,7 +233,7 @@
 .sidebar.active .home_content
 {
     width: calc(100% -78px);
-    left: 78px;
+    left: 20%;
+    right: 20%;
 }
   
- 
