@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista_espécies>
+    <espécie>
+        <nome>Asno-selvagem-africano (Equus africanus)</nome>
+        <descrição>
+            O asno-selvagem-africano é uma espécie criticamente ameaçada de extinção, segundo a classificação da IUCN.
+            Essa espécie é natural do continente africano e sofreu muitos anos com a destruição de seus habitats e a caça predatória.
+            É considerado o ancestral do burro doméstico.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Foca-monge-do-Havaí (Monachus schauinslandi)</nome>
+        <descrição>
+            A foca-monge-do-Havaí é uma espécie de foca que habita o arquipélago havaiano.
+            Ela vem sofrendo muito com a poluição dos mares, caça predatória e o comércio ilegal, dentre outras razões que contribuem para o risco de extinção.
+            Estima-se que atualmente existem aproximadamente 1000 animais vivos. Segundo a IUCN, a foca-monge-do-Havaí está classificada em perigo de extinção.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Lobo-vermelho (Canis rufus)</nome>
+        <descrição>
+            O lobo-vermelho é nativo da América do Norte e quase foi extinto na década de 80. As principais causas foram a destruição de seu habitat e a política e caça predatórias da época.
+            Considerado um animal criticamente ameaçado de extinção, atualmente o lobo-vermelho encontra-se em cativeiro com aproximadamente 200 indivíduos da mesma espécie.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Tigre-de-bengala (Panthera tigris tigris)</nome>
+        <descrição>
+            O tigre-de-bengala é nativo do sul asiático, sendo uma espécie considerada criticamente ameaçada de extinção, conforme classificação e estudos da IUCN.
+            O número de tigres-de-bengala diminuiu consideravelmente decorrente do comércio de peles, destruição de seu habitat e a caça ilegal.
+            Segundo pesquisas, atualmente existem menos de 2000 no mundo. No Paquistão, essa espécie encontra-se extinta.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Atum-azul (Thunnus thynnus)</nome>
+        <descrição>
+            O atum-azul é uma espécie de peixe encontrada em maior parte no mar mediterrâneo. O consumo exacerbado desse peixe acarretou numa considerável diminuição da espécie.
+            Considerado o maior e mais valorizado atum do mundo, é muito apreciado na culinária japonesa como ingrediente para os sushis e sashimis.
+            Atualmente, de acordo com a IUCN, o atum-azul é classificado como criticamente ameaçado de extinção.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Kakapo (Strigops habroptilus)</nome>
+        <descrição>
+            O kakapo é uma ave natural da Nova Zelândia e está classificada como criticamente ameaçada de extinção, segundo acompanhamento da IUCN.
+            Conhecido também como papagaio-mocho, o kakapo possui hábitos noturnos. A principal causa da diminuição da espécie foi consequência da caça ilegal para comércio de sua carne e penas.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Gorila-das-montanhas (Gorilla beringei)</nome>
+        <descrição>
+            O gorila-das-montanhas é considerado o maior primata vivo no mundo. Classificado como criticamente ameaçado de extinção, esta espécie vem sendo acompanhada por pesquisadores para evitar sua extinção.
+            Devido a caça ilegal e perda de habitat o número de indivíduos dessa espécie diminuiu drasticamente.
+            Estima-se que a população do gorila-das-montanhas seja de aproximadamente mil indivíduos, considerando inclusive aqueles que vivem em cativeiro.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Zebra-de-grévy (Equus grevyi)</nome>
+        <descrição>
+            A zebra-de-grévy é uma espécie que está classificada como em perigo de extinção. De acordo com dados da IUCN, estima-se que a população deste animal seja inferior a 2400 indivíduos.
+            A principal ameaça para sua extinção está relacionada à perda do habitat e diminuição dos recursos essenciais para a vida, como água e alimentos.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Orangotango-da-Sumatra (Pongo abelii)</nome>
+        <descrição>
+            O orangotango-da-Sumatra é uma espécie selvagem nativa de Bornéu e Sumatra. Classificado como criticamente ameaçado de extinção pela IUCN, este animal vem sofrendo com a degradação de seu habitat.
+            Outros motivos que contribuem para a diminuição desta espécie é o comércio e tráfico ilegal de animais, além da caça predatória, realizada principalmente por povos indígenas locais.
+        </descrição>
+    </espécie>
+    <espécie>
+        <nome>Camelo bactriano (Camelus bactrianus)</nome>
+        <descrição>
+            O camelo bactriano é uma espécie nativa da Ásia Central. Atualmente, a maioria das espécies vivas são domesticadas pelas populações locais.
+            Classificado como criticamente ameaçado de extinção pela IUCN, estima-se que atualmente existam menos de mil indivíduos desta espécie na natureza.
+            As principais ameaças para a espécie incluem a caça ilegal, a destruição de seu habitat natural e a competição por recursos com o gado domesticado.
+        </descrição>
+    </espécie>
+</lista_espécies>
+
