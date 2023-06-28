@@ -22,7 +22,7 @@ O número de animais em extinção no mundo cresce a cada dia mais, decorrente d
 - [Javascript](https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo/javaScript)
 
 ## Link para o Site
-https://inf22-ti-g05.netlify.app/
+https://inf22tig05.netlify.app/
 
 ## Equipe
 
