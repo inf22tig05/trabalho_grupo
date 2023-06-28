@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ligando XML no HTML</title>
+    <script>
+        function carregarXML() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    exibirDadosXML(this);
+                }
+            };
+            xhttp.open("GET", "especies.xml", true);
+            xhttp.send();
+        }
+
+        function exibirDadosXML(xml) {
+            var xmlDoc = xml.responseXML;
+            var especies = xmlDoc.getElementsByTagName("espécie");
+
+            var conteudoDiv = document.getElementById("conteudo");
+            conteudoDiv.innerHTML = ""; // Limpar o conteúdo existente
+
+            for (var i = 0; i < especies.length; i++) {
+                var nome = especies[i].getElementsByTagName("nome")[0].textContent;
+                var descricao = especies[i].getElementsByTagName("descrição")[0].textContent;
+
+                var especieDiv = document.createElement("div");
+                especieDiv.innerHTML = "<h3>" + nome + "</h3>" + "<p>" + descricao + "</p>";
+
+                conteudoDiv.appendChild(especieDiv);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Lista de Espécies Ameaçadas de Extinção</h1>
+    <button onclick="carregarXML()">Carregar XML</button>
+    <div id="conteudo"></div>
+</body>
+</html>
