@@ -8,8 +8,8 @@ O número de animais em extinção no mundo cresce a cada dia mais, decorrente d
 
 ## Organização do Repositório
 
-[O código-fonte está na pasta ] "codigo". 
-[Os capítulos do relatório estão na pasta] "codigo".
+[O código-fonte está na pasta ] (https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo). 
+[Os capítulos do relatório estão na pasta] (https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo/HTML).
 
 ## Tecnologias
 
