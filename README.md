@@ -8,10 +8,10 @@ O número de animais em extinção no mundo cresce a cada dia mais, decorrente d
 
 ## Organização do Repositório
 
-O código-fonte está na pasta  [codigo](https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo). 
-Os capítulos do relatório estão na pasta [HTML](https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo/HTML).
-As imagem uilizadas estão na pasta [imagem](https://github.com/inf22tig05/trabalho_grupo/tree/main/Imagem).
-Os dia de ajuda utilizado no trabalho [links](https://github.com/inf22tig05/trabalho_grupo/tree/main/Links)
+- O código-fonte está na pasta  [codigo](https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo).
+- Os capítulos do relatório estão na pasta [HTML](https://github.com/inf22tig05/trabalho_grupo/tree/main/Codigo/HTML).
+- As imagem uilizadas estão na pasta [imagem](https://github.com/inf22tig05/trabalho_grupo/tree/main/Imagem).
+- Os dia de ajuda utilizado no trabalho [links](https://github.com/inf22tig05/trabalho_grupo/tree/main/Links)
 
 
 ## Tecnologias
