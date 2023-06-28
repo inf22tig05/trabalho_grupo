@@ -75,17 +75,28 @@
         </ul>    
     </div>
     <div class="home_content">
-        <div class="help"><h1>Bem vindo a nossa pagina</h1>
-            <h4>Como podemos de ajudar ? </h4>  
+        <div class="help"><h1>Bem vindo a nossa pagina de apoio</h1>
+            <h4>Como podemos te ajudar ? </h4>  
         </div>
         <div class="text">
             <input type="text" class="input">
-            <button id="button" class="button">Submit</button> 
+            <button id="button" class="button" onclick="submitForm()">Enviar</button> 
         </div>
+        <div id="response" class="response"></div>
   </div>
 </div>
 
 <script src="menuScript.js"></script>
+<script>
+    function submitForm() {
+        var input = document.querySelector('.input');
+        var response = document.querySelector('#response');
+        if (input.value !== '') {
+            response.innerHTML = "Recebemos a tua mensagem, iremos responder brevimente. Obrigado!";
+            input.value = '';
+        }
+    }
+</script>
 
 
 
