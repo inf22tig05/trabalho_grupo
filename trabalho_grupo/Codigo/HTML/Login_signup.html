@@ -13,21 +13,21 @@
     <div class="form-box">
         <div class="button-box">
             <div id="btn"></div>
-            <button type="button" onclick="login()" class="toggle-btn">Entrar</button>
-            <button type="button" onclick="register()" class="toggle-btn">Registar</button>
+            <button type="button" onclick="setLoginFormPosition()" class="toggle-btn">Entrar</button>
+            <button type="button" onclick="setRegisterFormPosition()" class="toggle-btn">Registar</button>
         </div>
-        <form id="login" class="input-group" action="home.html">
-            <input type="text" class="input-field" placeholder="Usuario" required>
-            <input type="password" class="input-field" placeholder="Palavra passe" required>
+        <form id="loginForm" class="input-group" action="home.html">
+            <input type="text" id = 'username1' class="input-field" placeholder="Usuario" required>
+            <input type="password" id='password1' class="input-field" placeholder="Palavra passe" required>
             <input type="checkbox" class="check-box">
-            <span class="span">Lembrar Palavra Passe</span>
+            <span class="span">Esqueci Palavra-Passe</span>
             <button type="submit" class="submit-btn">Entrar</button> 
         </form>
-        <form id="register" class="input-group" action="home.html">
-            <input type="text" class="input-field" placeholder="Primeiro nome" required>
-            <input type="text" class="input-field" placeholder="Ultimo nome" required>
-            <input type="email" class="input-field" placeholder="e-mail" required>
-            <input type="password" class="input-field" placeholder="Palavra paasse" required>
+        <form id="registerForm" class="input-group" action="home.html">
+            <input type="text" id = 'firstname' class="input-field" placeholder="Primeiro nome" required>
+            <input type="text" id = 'lastname' class="input-field" placeholder="Ultimo nome" required>
+            <input type="email" id = 'username' class="input-field" placeholder="e-mail" required>
+            <input type="password" id = 'password' class="input-field" placeholder="Palavra paasse" required>
             <input type="password" class="input-field" placeholder="Confirmar Palavra paasse" required>
             <input type="checkbox" class="check-box">
             <span class="span">Aceite os tesmos e codições</span>
@@ -41,21 +41,80 @@
     </div>
 
     <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
-        const res = document.getElementsByClassName("submit-btn")
-        
-        function login(){
-            x.style.left = "35px"
-            y.style.left = "500px"
-            z.style.left = "0"
+        //Verificar se o usuario ja esta cadastrado
+        function isUserRegistered(username) {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            return users.some(user => user.username === username);
         }
 
-        function register(){
-            x.style.left = "-450px"
-            y.style.left = "35px"
-            z.style.left = "125px"
+        //Cadastrar novo usuario
+        function registerUser(firstname, lastname, username, password) {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            //Verifica se o usuario ja existe
+            if (isUserRegistered(username)) {
+                alert('Usuário já cadastrado!');
+                return;
+            }
+
+            //Add usuario
+            users.push({firstname, lastname, username, password});
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Cadastro Realizado com Sucesso!');
+        }
+        //Realizar login
+        function loginUser(username1, password1) {
+            //obter usuario
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            //verificar usuario e senha
+            const user = users.find(user => user.username === username1 && user.password === password1);
+            //verificar se a conta existe
+            if (user) {
+                alert('Login bem-sucedido!');
+                window.location.href = 'home.html';
+            }else {
+                alert('Nome de usuario ou senha incorreta.')
+            }
+        }
+        //Captura formulario de cadastro
+        const register = document.getElementById('registerForm');
+        register.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            registerUser(firstname, lastname, username, password);
+        });
+        //captura formulario login
+        const login = document.getElementById('loginForm');
+
+        login.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username1').value;
+            const password = document.getElementById('password1').value;
+            loginUser(username, password);
+        });
+        
+        function setLoginFormPosition() {
+            const x = document.getElementById('loginForm');
+            const y = document.getElementById('registerForm');
+            const z = document.getElementById('btn');
+        
+            x.style.left = "35px";
+            y.style.left = "500px";
+            z.style.left = "0";
+        }
+        
+        function setRegisterFormPosition() {
+            const x = document.getElementById('loginForm');
+            const y = document.getElementById('registerForm');
+            const z = document.getElementById('btn');
+        
+            x.style.left = "-450px";
+            y.style.left = "35px";
+            z.style.left = "125px";
         }
     </script>
 </body>

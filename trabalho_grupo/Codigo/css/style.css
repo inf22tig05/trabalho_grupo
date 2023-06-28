@@ -102,18 +102,18 @@ body
     position: absolute;
 }
 
-#login{
+#loginForm{
     left: 35px;
 }
 
-#login input{
+#loginForm input{
     color: white;
 }
-#register{
+#registerForm{
     left: 500px;
 }
 
-#register input{
+#registerForm input{
     color: white;
 }
 .social-icons{
